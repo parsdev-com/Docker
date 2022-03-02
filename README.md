@@ -4,7 +4,8 @@
 
 #### Install :
 ```
-wget https://raw.githubusercontent.com/parsdev-com/Docker/main/docker.sh;chmod +x docker.sh;./docker.sh
+echo 'registry-mirrors = "https://docker.parsdev.com"' > /etc/docker/daemon.json
+sudo systemctl restart docker.service
 ```
 
 ### Uninstall :
