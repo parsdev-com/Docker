@@ -20,7 +20,6 @@ systemctl restart docker.service
 ```
 
 ### Install docker-compose 
-# curl + grep
 ```
 VERSION=$(curl --silent https://api.github.com/repos/docker/compose/releases/latest | grep -Po '"tag_name": "\K.*\d')
 DESTINATION=/usr/local/bin/docker-compose
