@@ -4,7 +4,12 @@
 
 #### Install :
 ```
-echo '{ "registry-mirrors" : ["https://docker.parsdev.com"] }' > /etc/docker/daemon.json
+cat > /etc/docker/daemon.json <<EOF
+{
+  "registry-mirrors": ["https://docker.parsdev.com"]
+}
+EOF
+
 systemctl restart docker.service
 ```
 
